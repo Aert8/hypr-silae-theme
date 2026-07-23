@@ -71,7 +71,6 @@
 > | `hyprland.conf` — configuración principal del compositor | Cualquier barra de estado |
 > | `hyprlock.conf` — pantalla de bloqueo | Cualquier lanzador de apps |
 > | `hypridle.conf` — gestión de inactividad | Cualquier daemon de notificaciones |
-> | Sistema de temas modular (`themes/silae/`) | Scripts externos |
 >
 > Si buscas un entorno completo tipo *rice*, este repositorio es solo una pieza del puzzle. Puede que cuando leas esto ya haya añadido una configuración de waybar u otras herramientas en repositorios separados — revisa mi perfil de GitHub.
 
@@ -79,6 +78,7 @@
 
 ## ✦ Instalación
 
+> [!WARNING]
 > Ten en cuenta que esta configuración fue hecha para funcionar con las siguientes versiones:
 > - Hyprland : `0.54.3 built from branch v0.54.3`
 > - Hyprlock : `v0.9.5`

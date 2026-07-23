@@ -70,9 +70,8 @@
 > | ✅ Included | ❌ Not included |
 > |------------|--------------|
 > | `hyprland.conf` — main compositor configuration | Any Status Bar |
-> | `hyprlock.conf` — lock screen | Any app launcher |
-> | `hypridle.conf` — inactivity management | Any notification daemon |
-> | Modular theme system (`themes/silae/`) | External scripts |
+> | `hyprlock.conf` — lock screen configuration | Any app launcher |
+> | `hypridle.conf` — inactivity management configuration | Any notification daemon |
 >
 > If you are looking for a complete desktop environment *rice*, this repository is only one piece of the puzzle, maybe by the time you're reading this, I already add a waybar config or other tools on different repositories, check my github profile.
 
@@ -80,6 +79,7 @@
 
 ## ✦ Installation
 
+> [!WARNING]
 > Consider that this config was made to work with the following versions:
 > - Hyprland : `0.54.3 built from branch v0.54.3 `
 > - Hyprlock : `v0.9.5`
