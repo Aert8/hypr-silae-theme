@@ -69,9 +69,9 @@
 >
 > | ✅ Included | ❌ Not included |
 > |------------|--------------|
-> | `hyprland.conf` — main compositor configuration | Any Status Bar |
-> | `hyprlock.conf` — lock screen configuration | Any app launcher |
-> | `hypridle.conf` — inactivity management configuration | Any notification daemon |
+> | `hyprland.conf` — main compositor configuration | Any Status Bar configuration |
+> | `hyprlock.conf` — lock screen configuration | Any app launcher configuration |
+> | `hypridle.conf` — inactivity management configuration | Any notification daemon configuration |
 >
 > If you are looking for a complete desktop environment *rice*, this repository is only one piece of the puzzle, maybe by the time you're reading this, I already add a waybar config or other tools on different repositories, check my github profile.
 
@@ -95,6 +95,7 @@ If you want that all the keybindings works as expected you need to install some 
 - [`Hyprland`](https://hyprland.org/) — Wayland compositor (window manager)
 - [`hyprlock`](https://github.com/hyprwm/hyprlock) — lock screen
 - [`hypridle`](https://github.com/hyprwm/hypridle) — inactivity daemon
+- [`xdg-desktop-portal-hyprland`](https://github.com/hyprwm/xdg-desktop-portal-hyprland) — hyprland desktop portal
 - [`swaybg`](https://github.com/swaywm/swaybg) — wallpaper utility
 - [`wl-clipboard`](https://github.com/wl-clipboard/wl-clipboard) — clipboard utility
 - [`dunst`](https://github.com/dunst-project/dunst) — notification daemon
@@ -119,7 +120,17 @@ git clone https://github.com/Aert8/hypr-silae-theme ~/.config/hypr
 
 The `hyprland.conf` file acts as an entry point and automatically loads all modules of the `silae` theme. No additional steps are required.
 
-**3. (Optional) Customize the modules:**
+**3. Configure permissions**
+
+There is one file that manage the hyprland permissions, you can edit it to allow or deny access to certain features. The file is located at:
+
+```bash
+~/.config/hypr/themes/silae/hyprland/config/permissions.conf
+```
+
+I strongly recommend to read the comments and adjust the settings in the file according to your needs.
+
+**4. (Optional) Customize the modules:**
 
 ```bash
 # Path to edit the default programs (in case you don't want to install extra aplications)

@@ -68,9 +68,9 @@
 >
 > | ✅ Incluido | ❌ No incluido |
 > |------------|--------------|
-> | `hyprland.conf` — configuración principal del compositor | Cualquier barra de estado |
-> | `hyprlock.conf` — pantalla de bloqueo | Cualquier lanzador de apps |
-> | `hypridle.conf` — gestión de inactividad | Cualquier daemon de notificaciones |
+> | `hyprland.conf` — configuración principal del compositor | Configuracion de la barra de estado |
+> | `hyprlock.conf` — pantalla de bloqueo | Configuracion del lanzador de apps |
+> | `hypridle.conf` — gestión de inactividad | Configuracion del daemon de notificaciones |
 >
 > Si buscas un entorno completo tipo *rice*, este repositorio es solo una pieza del puzzle. Puede que cuando leas esto ya haya añadido una configuración de waybar u otras herramientas en repositorios separados — revisa mi perfil de GitHub.
 
@@ -91,6 +91,7 @@ Si quieres que todos los atajos de teclado funcionen correctamente, necesitas in
 - [`Hyprland`](https://hyprland.org/) — compositor Wayland (gestor de ventanas)
 - [`hyprlock`](https://github.com/hyprwm/hyprlock) — pantalla de bloqueo
 - [`hypridle`](https://github.com/hyprwm/hypridle) — daemon de inactividad
+- [`xdg-desktop-portal-hyprland`](https://github.com/hyprwm/xdg-desktop-portal-hyprland) — portal de escritorio para hyprland
 - [`swaybg`](https://github.com/swaywm/swaybg) — para gestionar el fondo de pantalla
 - [`wl-clipboard`](https://github.com/wl-clipboard/wl-clipboard) — utilidad de portapapeles para wayland
 - [`dunst`](https://github.com/dunst-project/dunst) — daemon de notificaciones
@@ -115,7 +116,17 @@ git clone https://github.com/Aert8/hypr-silae-theme ~/.config/hypr
 
 El archivo `hyprland.conf` actúa como punto de entrada y carga automáticamente todos los módulos del tema `silae`. No se requieren pasos adicionales.
 
-**3. (Opcional) Personaliza los módulos:**
+**3. Configura los permisos**
+
+Hay un archivo que gestiona los permisos de Hyprland, puedes editarlo para permitir o denegar el acceso a ciertas características. El archivo se encuentra en:
+
+```bash
+~/.config/hypr/themes/silae/hyprland/config/permissions.conf
+```
+
+Te recomiendo leer los comentarios y ajustar la configuración en el archivo según tus necesidades.
+
+**4. (Opcional) Personaliza los módulos:**
 
 ```bash
 # Ruta para editar los programas por defecto (si no quieres instalar apps extra)
